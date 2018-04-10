@@ -1,4 +1,4 @@
-FROM ghifari160/apache-php56:16.04
+FROM ghifari160/apache-php56:17.10
 
 MAINTAINER Ghifari160 <ghifari160@ghifari160.com>
 
