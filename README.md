@@ -1,7 +1,9 @@
 # Wordpress on Ubuntu for Docker #
+[![](https://img.shields.io/badge/docker%20hub-ghifari160%2Fwordpress-0073AA.svg)](https://hub.docker.com/r/ghifari160/apache-php56)
+[![](https://images.microbadger.com/badges/image/ghifari160/wordpress.svg)](https://microbadger.com/images/ghifari160/wordpress "Get your own image badge on microbadger.com")
 
-The [best CMS in the world][wp] running on the [best OS in the world][ubuntu]
-on the [best container system in the world][docker].
+The [best CMS][wp] in the world running on the [best OS][ubuntu] and the
+[best container system][docker] in the world.
 
 ## Why Use This Image ##
 This image is built on [ghifari160/apache-php56][g16-apache-php56], which forces
@@ -20,7 +22,7 @@ However, this image can be run in the foreground for debug purposes.
 docker run -it ghifari160/wordpress
 ```
 
-**This image must be [linked](#Link-to-another-container) to a database server
+**This image must be [linked](#link-to-another-container) to a database server
 or a container running a database server.**
 
 ### Further Configurations ###
@@ -57,8 +59,8 @@ docker run --link=mysql -d ghifari160/wordpress
 ## Tags ##
 | Tags                      | Ubuntu Version | Size |
 |---------------------------|----------------|------|
-| `latest` `16.04` `xenial` | 16.04          | *TBA* |
-| `17.10` `artful`          | 17.10          | *TBA* |
+| `latest` `16.04` `xenial` | 16.04          | [![](https://images.microbadger.com/badges/image/ghifari160/wordpress.svg)](https://microbadger.com/images/ghifari160/wordpress "Get your own image badge on microbadger.com") |
+| `17.10` `artful`          | 17.10          | [![](https://images.microbadger.com/badges/image/ghifari160/wordpress:17.10.svg)](https://microbadger.com/images/ghifari160/wordpress:17.10 "Get your own image badge on microbadger.com") |
 
 [wp]: https://wordpress.org
 [ubuntu]: http://wordpress.org
