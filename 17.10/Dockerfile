@@ -1,6 +1,6 @@
 FROM ghifari160/apache-php56:17.10
 
-MAINTAINER Ghifari160 <ghifari160@ghifari160.com>
+LABEL MAINTAINER "Ghifari160 <ghifari160@ghifari160.com>"
 
 # Disable interactive functions
 ENV DEBIAN_FRONTEND noninteractive
@@ -11,9 +11,9 @@ RUN mkdir -p /tmp/g16 && \
 
 # Add init script
 RUN mkdir -p /etc/g16
-ADD init.sh /etc/g16/init.sh
-RUN chown root:root /etc/g16/init.sh && chmod 711 /etc/g16/init.sh
+ADD init.sh /etc/g16/wp_init.sh
+RUN chown root:root /etc/g16/wp_init.sh && chmod 711 /etc/g16/wp_init.sh
 
 VOLUME ["/var/www"]
 
-ENTRYPOINT ["/etc/g16/init.sh"]
+ENTRYPOINT ["/etc/g16/wp_init.sh"]
