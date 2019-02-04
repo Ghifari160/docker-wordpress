@@ -1,4 +1,4 @@
-FROM ghifari160/apache-php56:18.04
+FROM ghifari160/apache-php73:18.04
 
 LABEL maintainer "Ghifari160 <ghifari160@ghifari160.com>"
 
